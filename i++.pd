@@ -1,0 +1,16 @@
+#N canvas 546 60 389 257 10;
+#X obj 46 141 f 0;
+#X obj 76 141 + 1;
+#X obj 46 163 outlet;
+#X obj 46 19 inlet;
+#X text 85 18 < bang increments \, float sets starting point;
+#X obj 46 41 route bang float reset;
+#X msg 132 65 0;
+#X connect 0 0 1 0;
+#X connect 0 0 2 0;
+#X connect 1 0 0 1;
+#X connect 3 0 5 0;
+#X connect 5 0 0 0;
+#X connect 5 1 0 1;
+#X connect 5 2 6 0;
+#X connect 6 0 0 1;

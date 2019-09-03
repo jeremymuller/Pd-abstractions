@@ -1,0 +1,17 @@
+#N canvas 702 231 450 300 10;
+#X declare -path ../;
+#X obj 60 210 i++;
+#X obj 50 21 declare -path ../;
+#X floatatom 60 231 5 0 0 0 - - -;
+#X obj 60 81 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 155 160 reset;
+#X floatatom 104 108 5 0 0 0 - - -;
+#X text 198 162 < reset to 0;
+#X text 139 111 < sets starting point;
+#X text 82 82 < bang to increment;
+#X connect 0 0 2 0;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
+#X connect 5 0 0 0;
+#X coords 0 300 1 299 107 100 0;

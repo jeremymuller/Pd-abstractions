@@ -1,0 +1,21 @@
+#N canvas 0 22 450 300 10;
+#X obj 96 76 inlet;
+#X obj 96 98 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 96 118 random;
+#X text 198 29 arg: min max;
+#X text 309 76 5 10;
+#X obj 218 80 loadbang;
+#X obj 218 102 t b b;
+#X obj 218 124 f \$1;
+#X obj 218 146 -;
+#X obj 258 124 f \$2;
+#X obj 218 168 print;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 6 1 9 0;
+#X connect 7 0 8 0;
+#X connect 8 0 10 0;
+#X connect 9 0 8 1;
