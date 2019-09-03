@@ -2,7 +2,7 @@
 #X declare -path ../;
 #X obj 31 31 declare -path ../;
 #X obj 95 174 bend piano.aif;
-#X obj 95 195 output~;
+#X obj 95 225 output~;
 #X obj 95 79 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X floatatom 176 124 5 0 0 0 - - -;
