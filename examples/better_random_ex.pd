@@ -1,0 +1,20 @@
+#N canvas 702 231 475 343 10;
+#X declare -path ../;
+#X obj 31 31 declare -path ../;
+#X obj 259 31 loadbang;
+#X msg 259 52 \; pd dsp 1 \;;
+#X floatatom 89 265 5 0 0 0 - - -;
+#X obj 89 162 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 89 244 better_random 5;
+#X floatatom 176 211 5 0 0 0 - - -;
+#X text 63 109 Uses noise to produce random numbers. DSP must be turned
+on for this to work.;
+#X text 111 161 < trigger output;
+#X text 215 209 < set max (non-inclusive);
+#X text 192 244 < optional argument for max;
+#X connect 1 0 2 0;
+#X connect 4 0 5 0;
+#X connect 5 0 3 0;
+#X connect 6 0 5 1;
+#X coords 0 343 1 342 107 100 0;

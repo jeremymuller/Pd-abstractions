@@ -1,0 +1,16 @@
+#N canvas 702 231 475 343 10;
+#X declare -path ../;
+#X obj 31 31 declare -path ../;
+#X obj 95 174 bend piano.aif;
+#X obj 95 195 output~;
+#X obj 95 79 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 176 124 5 0 0 0 - - -;
+#X text 195 174 < argument sets audio file;
+#X text 118 76 < trigger sound;
+#X text 215 124 < bend amount;
+#X connect 1 0 2 0;
+#X connect 1 0 2 1;
+#X connect 3 0 1 0;
+#X connect 4 0 1 1;
+#X coords 0 343 1 342 107 100 0;

@@ -1,0 +1,12 @@
+#N canvas 773 229 475 343 10;
+#X declare -path ../;
+#X obj 31 31 declare -path ../;
+#X obj 95 225 output~;
+#X obj 95 119 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 95 174 impulse~;
+#X text 118 116 < trigger impulse;
+#X connect 2 0 3 0;
+#X connect 3 0 1 0;
+#X connect 3 0 1 1;
+#X coords 0 343 1 342 107 100 0;

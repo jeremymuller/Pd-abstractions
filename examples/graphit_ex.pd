@@ -1,0 +1,12 @@
+#N canvas 702 231 475 343 10;
+#X declare -path ../;
+#X obj 31 31 declare -path ../;
+#X obj 112 160 osc~ 440;
+#X obj 112 181 graphit;
+#X obj 259 31 loadbang;
+#X msg 259 52 \; pd dsp 1 \;;
+#X floatatom 112 109 5 0 0 0 - - -;
+#X connect 1 0 2 0;
+#X connect 3 0 4 0;
+#X connect 5 0 1 0;
+#X coords 0 343 1 342 107 100 0;
