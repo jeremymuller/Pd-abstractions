@@ -7,6 +7,5 @@ Various Pure Data abstractions for use in your patches.
 TODO
 
 Examples:
-[logo]
 
-[logo]: https://github.com/jeremymuller/Pd-abstractions/tree/master/png/bend_ex.png
+![alt text](https://github.com/jeremymuller/Pd-abstractions/blob/master/png/bend_ex.png)
