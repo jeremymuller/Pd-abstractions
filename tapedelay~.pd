@@ -1,0 +1,18 @@
+#N canvas 246 56 472 446 10;
+#X obj 207 35 inlet~;
+#X obj 207 94 delwrite~ \$0-foo 1000;
+#X obj 131 375 delread4~ \$0-foo;
+#X obj 131 270 *~ 0.5;
+#X obj 131 291 +~ 0.5;
+#X obj 131 396 outlet~;
+#X floatatom 217 290 5 0 0 0 - - -;
+#X obj 131 249 osc~ 0.25;
+#X obj 131 312 *~ 10;
+#X text 22 14 TODO: add args and inlets;
+#X connect 0 0 1 0;
+#X connect 2 0 5 0;
+#X connect 3 0 4 0;
+#X connect 4 0 8 0;
+#X connect 6 0 8 1;
+#X connect 7 0 3 0;
+#X connect 8 0 2 0;
